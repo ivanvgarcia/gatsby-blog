@@ -31,7 +31,8 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in Tokyo building useful things.
+              Written by <strong>{author}</strong> a JavaScript and Ruby
+              developer who lives in Tokyo and loves web development.
             </p>
           </div>
         )

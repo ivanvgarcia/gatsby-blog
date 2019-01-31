@@ -16,14 +16,12 @@ class Layout extends React.Component {
           paddingBottom: rhythm(1),
           margin: '0',
           textAlign: 'center',
-          background: '#0637B2'
         }}
       >
         <Link
           style={{
             boxShadow: `none`,
             textDecoration: `none`,
-            color: `#FFC63B`,
           }}
           to={`/`}
         >
@@ -40,22 +38,25 @@ class Layout extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             maxWidth: rhythm(24),
             marginLeft: `auto`,
-            marginRight: `auto`
+            marginRight: `auto`,
           }}
         >
           {children}
         </div>
-        <footer style={{
-          paddingTop: rhythm(1),
-          paddingBottom: rhythm(1),
-          background: '#FFCD54'
-        }}>
+        <footer
+          style={{
+            paddingTop: rhythm(1),
+            paddingBottom: rhythm(1),
+            background: '#FFCD54',
+            textAlign: `center`,
+          }}
+        >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> by <a href="https://www.ivanvgarcia.com">Ivan Garcia</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> by{' '}
+          <a href="https://www.ivanvgarcia.com">Ivan Garcia</a>
         </footer>
       </div>
-
     )
   }
 }
